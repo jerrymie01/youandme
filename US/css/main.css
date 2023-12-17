@@ -182,6 +182,7 @@ button:hover {
 }
 
 #letter {
+ color: black;
   background-size: cover;
   background-position: center;
   align-items: center;
