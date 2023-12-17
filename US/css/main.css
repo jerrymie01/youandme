@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+ 
+:root {
+   --main-color: #d3ad7f;
+   --black: #13131a;
+   --bg: #010103;
+   --border: 1rem solid rgba(255,255, 255, .3);
+}
+
+* {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: .2s linear;
+
+}
+html{
+  scroll-behavior: fixed
+  ;
+}
+
+html {
+  color: #ffff;
+   font-size: 62.5%;
+ overflow-x: hidden;
+ scroll-padding-top: 9rem;
+ scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: .8rem;
+}
+html::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+   background: #ffff;
+   border: 5rem;
+}
+
+body {
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+ background-size: cover;
+  background-image: url(../images/pexels-photo-635279\ \(1\).jpeg);
+   background: var(--bg);
+   width: 100%;
+   height: 100vh;
+   color: #ffff;
+}
+
+/*------header------------*/
+.header {
+   background: var(--bg);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem 7%;
+   border-bottom: var(--border);
+   position: fixed;
+   top: 0;
+   left: 0%;
+   right: 0;
+   z-index: 1000;
+}
+.navbar  a { 
+   margin: 12.1rem;
+   font-size: 1.6rem;
+   color: #ffff;
+
+
+}
+.header .navbar a:hover {
+   color:  var(--main-color);
+   border-bottom: .1rem solid var(--main-color);
+   padding: .5rem;
+    
+
+}
+
+.header .icon  div{
+   color:#ffff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icon div:hover { color:  var(--main-color);
+}
+
+#menu-btn {
+   display: none;
+}
+
+
+/*--------HOME-----*/
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/pexels-photo-635279\ \(1\).jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 60rem;
+
+}
+.home .content h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.home .content p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #ffff;
+  line-height: 1.0;
+  padding: 1rem 0;
+
+}
+.btn-primary{
+  font-size: 50px;
+  margin-top: 10px;
+  color: #ffff;
+  background: var(--main-color);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 15px;
+  width: fit-content;
+}
+.btn-primary {
+  background: crimson;
+  transition: all 0.3s ease;
+}
+.btn{
+  font-size: 25px;
+  margin-top: 10px;
+  color: #ffff;
+ 
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 15px;
+  width: fit-content;
+}
+.btn {
+  
+  transition: all 0.3s ease;
+}
+
+
+section {
+  padding: 2rem 7%;
+}
+
+/*--------HOME END SECTIONS-----*/
+/*----------PRODUCT STARTS--------*/
+
+
+
+
+
+
+button {
+  display: flex;
+  color: #ffff;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  background-color: #f77062;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+button:hover {
+  background: #4837ff;
+  transition: all 0.3s ease;
+}
+
+#letter {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../images/pexels-photo-635279\ \(1\).jpeg);
+}
+#poem {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+ background-image: url(../images/pexels-photo-635279\ \(1\).jpeg);
+height: fit-content;
+}
+
+.poem-section {
+
+}
+
+
+/*----------- CONTACT CSS END-------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* small screen */
+
+@media screen and  (max-width:900px) {
+   html {
+       font-size: 55%;
+      
+   }
+
+}
+@media (max-width:900px) {
+
+  #menu-btn {
+   display: inline-block;
+  }
+  .header .navbar {
+   position: absolute;
+   top: 100%;
+   right: -100%;
+   background:  #ffff;
+   width: 25rem;
+   height: calc(100vh - 9.5rem);
+  }
+  .header .navbar.active {
+   right: 0;
+  }
+  .header .navbar a {
+   color: var(--black);
+   display: block;
+   margin: 1.5rem;
+   padding: .5rem;
+   font-size: 2rem;
+  }
+
+
+
+
+.home {
+  background-position: left;
+  justify-content: center;
+  text-align: center;
+}
+
+.home .content h1{
+  font-size: 4.5rem ;
+}
+
+.home .content p{
+  font-size: 2.5rem ;
+}
+
+.contact-left {
+  margin-left: 3px ;
+  position: absolute;
+  flex-basis: 35%;
+  font-size: 12px;
+  margin-top: 20%;
+  
+}
+
+
+
+.contact-left a {
+  font-weight: 600;
+  margin-top: 25%;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 15px;
+  display: flex;
+  margin: 25px;
+  margin-left: 0;
+
+}
+.contact-left a i {
+  color: crimson;
+  font-size: 13px;
+  margin-right: 3px;
+}
+
+
+
+
+.social-icon {
+margin-top: 5px;
+  display: inline-block;
+  display: flex;
+  
+}
+.social-icon a i{
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  
+  
+  color: #ffff;
+  
+  transition: transform 0.5s;
+}
+.social-icon a i:hover {
+  color: crimson;
+  transform: translateY( -5px);
+
+
+}
+
+
+
+.contact-right {
+  font-size: 30px;
+  width: 80%;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 10%;
+
+}
+.contact-right form {
+  width: 100%;
+}
+form input, textarea {
+  width: 75%;
+  border:  0;
+  outline:  none;
+  background: #262626;
+  padding:  15px;
+  margin: 15px 0;
+  color: #ffff;
+  font-size: 18px;
+  border-radius: 6px;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
